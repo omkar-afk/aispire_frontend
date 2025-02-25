@@ -13,8 +13,8 @@ const Pricing = () => {
             <SectionHeader
               headerInfo={{
                 title: `PRICING PLANS`,
-                subtitle: `Simple Pricing`,
-                description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+                subtitle: `Simple, Transparent Pricing`,
+                description: `Choose the perfect plan for your business needs. No hidden fees, no surprises.`,
               }}
             />
           </div>
@@ -34,39 +34,49 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $10{" "}
+                Free{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
+                  /Forever
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Small Pack
+                Freemium
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <p>Forever</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
+                <h5 className="mb-4">Features include:</h5>
                 <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                    <span className="font-medium">Knowledge Base:</span> Website Link (URL)/ Docs
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                    <span className="font-medium">Customization:</span> Not Available (Powered by AIspire Labs)
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Response Speed:</span> 4-5 Seconds
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Concurrent Visitors:</span> &lt;5 Concurrent Visitors on platform
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Assistants:</span> 1
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Tokens Words:</span> &lt;300K Words
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Support:</span> Email (24-48 Hours)
                   </li>
                 </ul>
               </div>
 
               <button
-                aria-label="Get the Plan button"
+                aria-label="Get Started button"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
+                  Get Started
                 </span>
                 <svg
                   width="14"
@@ -85,43 +95,53 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <div className="absolute -right-3.5 top-7.5 -rotate-90 rounded-bl-full rounded-tl-full bg-primary px-4.5 py-1.5 text-metatitle font-medium uppercase text-white">
-                popular
+                Most Popular
               </div>
 
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $59{" "}
+                ₹8,760{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
+                  /year
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Medium Pack
+                Pro
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <p>12 months</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
+                <h5 className="mb-4">Features include:</h5>
                 <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                    <span className="font-medium">Knowledge Base:</span> URLs, Docs, Text, Images, Videos
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                    <span className="font-medium">Customization:</span> Yes (Brand Logo, Colour, Tone etc)
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                    <span className="font-medium">Response Speed:</span> 2-3 Seconds
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Concurrent Visitors:</span> 100 Concurrent Visitors on platform
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Assistants:</span> 2
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Tokens Words:</span> 10M Words
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Support:</span> Phone/Email &lt;1Hour
                   </li>
                 </ul>
               </div>
 
               <button
-                aria-label="Get the Plan button"
+                aria-label="Contact Sales button"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
+                  Contact Sales
                 </span>
                 <svg
                   width="14"
@@ -140,39 +160,49 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-                $189{" "}
+                ₹36,500{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
-                  /month
+                  /year
                 </span>
               </h3>
               <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
-                Large Pack
+                Enterprise
               </h4>
-              <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+              <p>12 months</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
+                <h5 className="mb-4">Features include:</h5>
                 <ul>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    300 GB Storage
+                    <span className="font-medium">Knowledge Base:</span> URLs, Docs, Text, Images, Videos, Code
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Unlimited Photos and Videos
+                    <span className="font-medium">Customization:</span> Yes (Brand Logo, Colour, Tone etc)
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Exclusive Support
+                    <span className="font-medium">Response Speed:</span> 1-2 Seconds
                   </li>
                   <li className="mb-4 text-black last:mb-0 dark:text-manatee">
-                    Custom Branding Strategy
+                    <span className="font-medium">Concurrent Visitors:</span> Unlimited visitors
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Assistants:</span> 3
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Tokens Words:</span> 50M Words
+                  </li>
+                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                    <span className="font-medium">Support:</span> Dedicated CSM
                   </li>
                 </ul>
               </div>
 
               <button
-                aria-label="Get the Plan button"
+                aria-label="Contact Sales button"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
                 <span className="duration-300 group-hover/btn:pr-2">
-                  Get the Plan
+                  Contact Sales
                 </span>
                 <svg
                   width="14"

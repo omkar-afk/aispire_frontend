@@ -1,15 +1,32 @@
 "use client";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
+import { motion } from "framer-motion";
 
 const Pricing = () => {
   return (
     <>
       {/* <!-- ===== Pricing Table Start ===== --> */}
-      <section className="overflow-hidden pb-20 pt-15 lg:pb-25 xl:pb-30">
+      <section id="pricing" className="overflow-hidden pb-20 pt-15 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
-          <div className="animate_top mx-auto text-center">
+          <motion.div 
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: -20,
+              },
+              visible: {
+                opacity: 1,
+                y: 0,
+              },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="animate_top mx-auto text-center"
+          >
             <SectionHeader
               headerInfo={{
                 title: `PRICING PLANS`,
@@ -17,7 +34,7 @@ const Pricing = () => {
                 description: `Choose the perfect plan for your business needs. No hidden fees, no surprises.`,
               }}
             />
-          </div>
+          </motion.div>
           {/* <!-- Section Title End --> */}
         </div>
 
@@ -32,7 +49,23 @@ const Pricing = () => {
           </div>
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
             {/* <!-- Pricing Item --> */}
-            <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
+            <motion.div 
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: 30,
+                },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5"
+            >
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                 Free{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
@@ -90,10 +123,26 @@ const Pricing = () => {
                   />
                 </svg>
               </button>
-            </div>
+            </motion.div>
 
             {/* <!-- Pricing Item --> */}
-            <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
+            <motion.div 
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: 30,
+                },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5, delay: 0.4 }}
+              viewport={{ once: true }}
+              className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5"
+            >
               <div className="absolute -right-3.5 top-7.5 -rotate-90 rounded-bl-full rounded-tl-full bg-primary px-4.5 py-1.5 text-metatitle font-medium uppercase text-white">
                 Most Popular
               </div>
@@ -155,10 +204,26 @@ const Pricing = () => {
                   />
                 </svg>
               </button>
-            </div>
+            </motion.div>
 
             {/* <!-- Pricing Item --> */}
-            <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
+            <motion.div 
+              variants={{
+                hidden: {
+                  opacity: 0,
+                  y: 30,
+                },
+                visible: {
+                  opacity: 1,
+                  y: 0,
+                },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ duration: 0.5, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5"
+            >
               <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
                 ₹36,500{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
@@ -216,7 +281,7 @@ const Pricing = () => {
                   />
                 </svg>
               </button>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

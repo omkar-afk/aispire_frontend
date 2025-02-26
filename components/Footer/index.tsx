@@ -161,43 +161,42 @@ const Footer = () => {
                     </li>
                   </ul> */}
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Quick Links
-                  </h4>
-
-                  <ul>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Home
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Product
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Careers
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Pricing
-                      </a>
-                    </li>
-                  </ul>
+  Quick Links
+</h4>
+<ul>
+  <li>
+    <a
+      href="/"
+      className="mb-3 inline-block hover:text-primary"
+    >
+      Home
+    </a>
+  </li>
+  <li>
+    <a
+      href="/#features"
+      className="mb-3 inline-block hover:text-primary"
+    >
+      Features
+    </a>
+  </li>
+  <li>
+    <a
+      href="/#pricing"
+      className="mb-3 inline-block hover:text-primary"
+    >
+      Pricing
+    </a>
+  </li>
+  <li>
+    <a
+      href="/support"
+      className="mb-3 inline-block hover:text-primary"
+    >
+      Contact Us
+    </a>
+  </li>
+</ul>
                 </motion.div>
 
                 <motion.div

@@ -27,22 +27,22 @@ const brandData: Brand[] = [
     id: 0.5,
     name: "Client",
     href: "#",
-    image: "/images/brand/brand-light-04.svg",
-    imageLight: "/images/brand/brand-dark-04.svg",
+    image: "/images/brand/output-onlinepngtools-4.png",
+    imageLight: "/images/brand/output-onlinepngtools-4.png",
   },
   {
     id: 0.6,
     name: "Client",
     href: "#",
-    image: "/images/brand/brand-light-05.svg",
-    imageLight: "/images/brand/brand-dark-05.svg",
+    image: "/images/brand/output-onlinepngtools-3.png",
+    imageLight: "/images/brand/output-onlinepngtools-3.png",
   },
   {
     id: 0.7,
     name: "Client",
     href: "#",
-    image: "/images/brand/brand-light-06.svg",
-    imageLight: "/images/brand/brand-dark-06.svg",
+    image: "/images/brand/output-onlinepngtools-2.png",
+    imageLight: "/images/brand/output-onlinepngtools-2.png",
   },
 ];
 

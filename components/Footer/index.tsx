@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-
+import Link from "next/link";
 const Footer = () => {
   return (
     <>
@@ -28,25 +28,10 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                <a href="/" className="relative">
-                  <Image
-                    width={110}
-                    height={80}
-                    src="/images/logo/logo-light.svg"
-                    alt="Logo"
-                    className="dark:hidden"
-                  />
-                  <Image
-                    width={110}
-                    height={80}
-                    src="/images/logo/logo-dark.svg"
-                    alt="Logo"
-                    className="hidden dark:block"
-                  />
-                </a>
+                <div className="text-2xl font-semibold text-black"><Link href="/">AISPIRE LABS</Link></div>
 
                 <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                We engage, and elevate your customer experience.
                 </p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
@@ -56,7 +41,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  aispirelabs@gmail.com
                 </a>
               </motion.div>
 
@@ -79,7 +64,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  {/* <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
                     Quick Links
                   </h4>
 
@@ -116,7 +101,7 @@ const Footer = () => {
                         Pricing
                       </a>
                     </li>
-                  </ul>
+                  </ul> */}
                 </motion.div>
 
                 <motion.div
@@ -137,7 +122,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                  {/* <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
                     Support
                   </h4>
 
@@ -168,10 +153,48 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/support"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Contact Us
+                      </a>
+                    </li>
+                  </ul> */}
+                  <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
+                    Quick Links
+                  </h4>
+
+                  <ul>
+                    <li>
+                      <a
+                        href="#"
+                        className="mb-3 inline-block hover:text-primary"
+                      >
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="mb-3 inline-block hover:text-primary"
+                      >
+                        Product
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="mb-3 inline-block hover:text-primary"
+                      >
+                        Careers
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="mb-3 inline-block hover:text-primary"
+                      >
+                        Pricing
                       </a>
                     </li>
                   </ul>

@@ -56,14 +56,14 @@ const Hero = () => {
           <div className="w-full md:w-1/2 lg:flex lg:justify-center">
             <div className="relative max-w-lg">
               <Image
-                src="/images/hero/hero1.jpg"
+                src="/gif/ded0bbdd8485e424327257405a86a884.gif"
                 alt="Hero"
                 width={700}
                 height={444}
                 className="rounded-lg object-contain shadow-lg dark:hidden"
               />
               <Image
-                src="/images/hero/hero1.jpg"
+                src="/gif/ded0bbdd8485e424327257405a86a884.gif"
                 alt="Hero"
                 width={700}
                 height={444}

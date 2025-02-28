@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
+    <section className="overflow-hidden pb-20 mb-10 mt-5 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
         <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:gap-12 xl:gap-24">
           {/* Left Section */}

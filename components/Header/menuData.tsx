@@ -21,22 +21,23 @@ const menuData: Menu[] = [
   },
   {
     id: 4,
-    title: "Login",
+    title: "Try SARA",
     newTab: false,
-    submenu: [
-      {
-        id: 3,
-        title: "Sign In",
-        newTab: false,
-        path: "/auth/signin",
-      },
-      {
-        id: 4,
-        title: "Sign Up",
-        newTab: false,
-        path: "/auth/signup",
-      },
-    ],
+    path:"/auth/signin",
+    // submenu: [
+    //   {
+    //     id: 3,
+    //     title: "Sign In",
+    //     newTab: false,
+    //     path: "/auth/signin",
+    //   },
+    //   {
+    //     id: 4,
+    //     title: "Sign Up",
+    //     newTab: false,
+    //     path: "/auth/signup",
+    //   },
+    // ],
   },
   
 

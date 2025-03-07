@@ -1,41 +1,38 @@
-"use client";
-import React from "react";
-import featuresData from "./featuresData";
-import SingleFeature from "./SingleFeature";
-import SectionHeader from "../Common/SectionHeader";
+'use client';
+import styles from './page.module.scss'
+import { projects } from './featuresData';
+import Card from './FeatureCard';
+import { useScroll } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import Lenis from '@studio-freight/lenis'
 
-const Feature = () => {
+
+export default function Feature() {
+  const container = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start start', 'end end']
+  })
+
+  useEffect( () => {
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  })
+
   return (
-    <>
-      {/* <!-- ===== Features Start ===== --> */}
-      <section id="features" className="py-20 lg:py-25 xl:py-30">
-        <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
-          {/* <!-- Section Title Start --> */}
-          <SectionHeader
-            headerInfo={{
-              title: "SARA FEATURES",
-              subtitle: "Core Features of SARA",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
-            }}
-          />
-          {/* <!-- Section Title End --> */}
-
-          <div className="mt-12.5 grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:mt-15 lg:grid-cols-3 xl:mt-20 xl:gap-12.5">
-            {/* <!-- Features item Start --> */}
-
-            {featuresData.map((feature, key) => (
-              <SingleFeature feature={feature} key={key} />
-            ))}
-            {/* <!-- Features item End --> */}
-          </div>
-        </div>
-      </section>
-
-      {/* <!-- ===== Features End ===== --> */}
-    </>
-  );
-};
-
-export default Feature;
+    <main ref={container} className={styles.main} id="features" >
+      {
+        projects.map( (project, i) => {
+          const targetScale = 1 - ( (projects.length - i) * 0.05);
+          return <Card key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
+        })
+      }
+    </main>
+  )
+}

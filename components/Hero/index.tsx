@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="overflow-hidden pb-20 mb-10 mt-5 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
+    <section className="overflow-hidden pb-20 mb-6 mt-5 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
         <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:gap-12 xl:gap-24">
           {/* Left Section */}
@@ -29,23 +29,24 @@ const Hero = () => {
             </p>
 
             <div className="mt-8">
-              <form onSubmit={handleSubmit}>
+
                 <div className="flex flex-wrap gap-4">
-                  <input
+                  {/* <input
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     placeholder="Enter your email address"
                     className="w-full max-w-sm rounded-full border border-stroke px-6 py-2.5 shadow-sm focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
-                  />
+                  /> */}
+                  <a href="/auth/signin">
                   <button
-                    type="submit"
                     className="rounded-full bg-black px-7 py-2.5 text-white transition-all duration-300 ease-in-out hover:bg-gray-800 dark:bg-btndark dark:hover:bg-blackho"
                   >
                     Get Started
                   </button>
+                  </a>
                 </div>
-              </form>
+
               <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
                 Try for free, no credit card required.
               </p>
@@ -56,14 +57,14 @@ const Hero = () => {
           <div className="w-full md:w-1/2 lg:flex lg:justify-center">
             <div className="relative max-w-lg">
               <Image
-                src="/gif/ded0bbdd8485e424327257405a86a884.gif"
+                src="/images/hero/hero2.png"
                 alt="Hero"
                 width={700}
                 height={444}
                 className="rounded-lg object-contain shadow-lg dark:hidden"
               />
               <Image
-                src="/gif/ded0bbdd8485e424327257405a86a884.gif"
+                src="/images/hero/hero2.png"
                 alt="Hero"
                 width={700}
                 height={444}

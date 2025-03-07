@@ -4,7 +4,7 @@ import styles from './style.module.scss';
 import { useTransform, motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
 
-const Card = ({i, title, description, src, url, color, progress, range, targetScale}) => {
+const Card = ({i, title, description, src, link, color, progress, range, targetScale}) => {
 
   const container = useRef(null);
   const { scrollYProgress } = useScroll({

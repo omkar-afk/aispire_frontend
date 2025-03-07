@@ -212,7 +212,7 @@ const About = () => {
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
               <Image
-                src="./images/about/about-light-02.svg"
+                src="/images/about/about-light-02.svg"
                 alt="About"
                 className="dark:hidden"
                 fill

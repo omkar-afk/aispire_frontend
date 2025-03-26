@@ -17,10 +17,10 @@ export default function Feature() {
     // Configure Lenis for smoother scrolling
     const lenis = new Lenis({
       duration: 1.2, // Smoother scroll
-      easing: (t: number) => 1 - Math.pow(2, -10 * t), // Fixed easing function
-      smooth: true,
+      lerp: 0.1, // Linear interpolation for smoother movement
       wheelMultiplier: 1,
-      touchMultiplier: 2 
+      touchMultiplier: 2,
+      infinite: false
     })
     
     function raf(time: number) {

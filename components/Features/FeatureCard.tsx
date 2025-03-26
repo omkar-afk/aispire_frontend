@@ -49,19 +49,16 @@ const Card: React.FC<CardProps> = ({
  
   return (
     <div ref={container} className={styles.cardContainer}>
-      <motion.div 
-  style={{
-    backgroundColor: color, 
-    scale, 
-    top: `calc(-5vh + ${i * 25}px)`
-  }}
-  transition={{
+      <motion.div
+  className={styles.inner}
+  style={{ scale: imageScale }}
+  transition={{ // ✅ Move transition as a prop
     type: 'spring',
-    stiffness: 100,
-    damping: 20
+    stiffness: 80,
+    damping: 15
   }}
-  className={styles.card}
 >
+
 
         <h2>{title}</h2>
         <div className={styles.body}

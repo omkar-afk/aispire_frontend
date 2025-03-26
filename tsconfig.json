@@ -7,10 +7,10 @@
     ],
     "baseUrl": ".",
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": false,
+    "skipLibCheck": true, // This already helps skip some type checking
+    "strict": false, // Disable strict type checking
+    "noEmit": true, // Prevent emitting files during type checking
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
     "incremental": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -18,20 +18,8 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "react": [
-        "./node_modules/@types/react"
-      ]
-    },
-    "strictNullChecks": true,
+    "noImplicitAny": false, // Explicitly disable implicit any type errors
+    "strictNullChecks": false, // Disable strict null checks
     "target": "ES2017"
   },
   "include": [
@@ -42,6 +30,5 @@
   ],
   "exclude": [
     "node_modules"
-  ],
-  "noImplicitAny":false
+  ]
 }

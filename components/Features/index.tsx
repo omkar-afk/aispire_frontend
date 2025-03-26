@@ -17,17 +17,13 @@ export default function Feature() {
     // Configure Lenis for smoother scrolling
     const lenis = new Lenis({
       duration: 1.2, // Smoother scroll
-      easing: (t) => 1 - Math.pow(2, -10 * t), // Fixed easing function
-      direction: 'vertical',
-      gestureDirection: 'vertical',
+      easing: (t: number) => 1 - Math.pow(2, -10 * t), // Fixed easing function
       smooth: true,
-      mouseMultiplier: 1,
-      smoothTouch: true, 
+      wheelMultiplier: 1,
       touchMultiplier: 2 
     })
     
-
-    function raf(time) {
+    function raf(time: number) {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }

@@ -16,14 +16,17 @@ export default function Feature() {
   useEffect(() => {
     // Configure Lenis for smoother scrolling
     const lenis = new Lenis({
-      duration: 1.2, // Smoother scroll
-      lerp: 0.1, // Linear interpolation for smoother movement
-      wheelMultiplier: 1,
-      touchMultiplier: 2,
-      infinite: false
+      duration: 1.2, // Increased duration for smoother scroll
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Smooth easing function
+      direction: 'vertical',
+      gestureDirection: 'vertical',
+      smooth: true,
+      mouseMultiplier: 1,
+      smoothTouch: true, // Enable smooth scrolling on touch devices
+      touchMultiplier: 2 // Adjust touch sensitivity
     })
-    
-    function raf(time: number) {
+
+    function raf(time) {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }

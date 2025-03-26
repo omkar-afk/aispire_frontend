@@ -49,28 +49,33 @@ const Card: React.FC<CardProps> = ({
  
   return (
     <div ref={container} className={styles.cardContainer}>
-      <motion.div
-        className={styles.inner}
-        style={{ scale: imageScale }}
-        animate={{ scale: 1 }}
-        transition={{
-          type: 'spring',
-          stiffness: 80,
-          damping: 15
-        }}
+      <motion.div 
+        style={{
+          backgroundColor: color, 
+          scale, 
+          top: `calc(-5vh + ${i * 25}px)`,
+          transition: {
+            type: 'spring',
+            stiffness: 100,
+            damping: 20
+          }
+        }} 
+        className={styles.card}
       >
         <h2>{title}</h2>
-        <div 
-          className={styles.body}
-          style={!src ? {
-            width: '100%',
-            top: '0',
-            textAlign: 'center',
-            display: 'flex',
-            justifyContent:'space-around',
-          } : {}}
-        >
-          <div className={styles.description}>
+        <div className={styles.body}
+        style={!src ? {
+          width: '100%',
+          top: '0',
+          textAlign: 'center',
+
+          display: 'flex',
+          justifyContent:'space-around',
+        } : {}}>
+          <div 
+            className={styles.description} 
+            
+          >
             <p>{description}</p>
             <span>
               {/* Commented out links/icons */}
@@ -81,11 +86,13 @@ const Card: React.FC<CardProps> = ({
             <div className={styles.imageContainer}>
               <motion.div
                 className={styles.inner}
-                style={{ scale: imageScale }}
-                transition={{
-                  type: 'spring',
-                  stiffness: 80,
-                  damping: 15
+                style={{
+                  scale: imageScale,
+                  transition: {
+                    type: 'spring',
+                    stiffness: 80,
+                    damping: 15
+                  }
                 }}
               >
                 <Image

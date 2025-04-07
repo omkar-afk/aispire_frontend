@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Hero"
 import Brands from "@/components/Brands";
 import Feature from "@/components/Features";
 import About from "@/components/About";
@@ -12,7 +12,6 @@ import Pricing from "@/components/Pricing";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
-
 export const metadata: Metadata = {
   title: "AIspire Labs",
 

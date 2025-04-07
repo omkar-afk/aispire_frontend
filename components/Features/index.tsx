@@ -18,19 +18,17 @@ export default function Feature() {
     const lenis = new Lenis({
       duration: 1.2, // Increased duration for smoother scroll
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Smooth easing function
-      direction: 'vertical',
-      gestureDirection: 'vertical',
-      smooth: true,
-      mouseMultiplier: 1,
+      orientation: 'vertical', // Use orientation instead of direction
+      smoothWheel: true, // Enable smooth wheel scrolling
       smoothTouch: true, // Enable smooth scrolling on touch devices
-      touchMultiplier: 2 // Adjust touch sensitivity
+      touchMultiplier: 2, // Adjust touch sensitivity
+      wheelMultiplier: 1 // Equivalent to mouseMultiplier
     })
 
     function raf(time) {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }
-
     requestAnimationFrame(raf)
 
     // Cleanup function to stop Lenis when component unmounts
@@ -45,12 +43,12 @@ export default function Feature() {
         projects.map((project, i) => {
           const targetScale = 1 - ((projects.length - i) * 0.05);
           return (
-            <Card 
-              key={`p_${i}`} 
-              i={i} 
-              {...project} 
-              progress={scrollYProgress} 
-              range={[i * 0.25, 1]} 
+            <Card
+              key={`p_${i}`}
+              i={i}
+              {...project}
+              progress={scrollYProgress}
+              range={[i * 0.25, 1]}
               targetScale={targetScale}
             />
           )

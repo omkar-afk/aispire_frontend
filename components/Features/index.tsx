@@ -14,15 +14,12 @@ export default function Feature() {
   })
 
   useEffect(() => {
-    // Configure Lenis for smoother scrolling with only valid options
+    // Configure Lenis with only basic options to avoid type errors
     const lenis = new Lenis({
       duration: 1.2, // Increased duration for smoother scroll
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Smooth easing function
       orientation: 'vertical', // Use orientation instead of direction
-      smoothWheel: true, // Enable smooth wheel scrolling
-      wheelMultiplier: 1, // Adjust wheel sensitivity
-      touch: true, // Enable touch scrolling
-      touchMultiplier: 2 // Adjust touch sensitivity
+      smoothWheel: true // Enable smooth wheel scrolling
     })
 
     function raf(time) {
